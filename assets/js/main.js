@@ -7,3 +7,5 @@ $(document).ready(function(){
     arrows: false
   });
 });
+
+$(document).foundation();

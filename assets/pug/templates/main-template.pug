@@ -33,6 +33,7 @@ html(lang=lang)
 			include ../includes/_header
 
 		block content
+			.chart
 
 		footer.footer
 			include ../includes/_footer
@@ -46,5 +47,7 @@ html(lang=lang)
 				script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
 			if bootstrap4Local
 				script(src="libs/bootstrap/dist/js/bootstrap.min.js")
+			if foundationLocal
+				script(src="libs/foundation/js/vendor/foundation.min.js")
 			script(src="libs/slick/slick.js")
 			script(src="assets/js/main.js")
