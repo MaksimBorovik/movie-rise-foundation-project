@@ -1,0 +1,53 @@
+.footer {
+
+  &__menu {
+
+    &-link {
+      margin-right: 20px;
+      font-family: 'HelveticaNeue-Roman';
+      color: $color-gray;
+      font-size: 24px;
+      line-height: 44px;
+      letter-spacing: 40 * 24px / 1000;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__logo {
+
+    &-link {
+      @extend .header__top-logo-link;
+      color: $color-primary;
+
+      &-light {
+        @extend .header__top-logo-link-light;
+      }
+
+      &:hover,
+      &:focus {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: flex-end;
+
+    &-item {
+      margin-left: 25px;
+      font-size: 34px;
+      color: $color-gray;
+
+      &:hover,
+      &:focus {
+        color: $color-primary;
+      }
+    }
+  }
+}

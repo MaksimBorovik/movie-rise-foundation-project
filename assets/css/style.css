@@ -87,7 +87,7 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-.header__top-logo-link {
+.header__top-logo-link, .footer__logo-link {
   display: block;
   color: #ffffff;
   font-family: 'Helvetica Neue Condensed Black';
@@ -96,7 +96,7 @@
   letter-spacing: 2px;
 }
 
-.header__top-logo-link-light {
+.header__top-logo-link-light, .footer__logo-link-light {
   font-family: 'Helvetica Neue';
   font-size: 50px;
   line-height: 65px;
@@ -560,4 +560,44 @@ body {
 
 .chart__list-subscribe-button:hover, .chart__list-subscribe-button:focus {
   color: #ffffff;
+}
+
+.footer__menu-link {
+  margin-right: 20px;
+  font-family: 'HelveticaNeue-Roman';
+  color: #cecfcf;
+  font-size: 24px;
+  line-height: 44px;
+  letter-spacing: 0.96px;
+}
+
+.footer__menu-link:hover, .footer__menu-link:focus, .footer__menu-link:active {
+  color: #0aaee4;
+}
+
+.footer__logo-link {
+  color: #0aaee4;
+}
+
+.footer__logo-link:hover, .footer__logo-link:focus {
+  color: #0aaee4;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer__social-item {
+  margin-left: 25px;
+  font-size: 34px;
+  color: #cecfcf;
+}
+
+.footer__social-item:hover, .footer__social-item:focus {
+  color: #0aaee4;
 }
