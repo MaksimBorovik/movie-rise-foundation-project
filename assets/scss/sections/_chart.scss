@@ -6,8 +6,11 @@
 
   &__menu {
     margin-bottom: 36px;
-    
 
+    @include ul-min {
+      margin-bottom: 24px;
+    }
+    
     &::after {
       margin-right: 15px;
       margin-left: 15px;
@@ -30,7 +33,12 @@
           letter-spacing: 40 * 28px / 1000;
           border-bottom: 4px solid transparent;
 
-          a {
+          @include ul-min {
+            font-size: 19px;
+            line-height: 40px;
+          }
+
+          &-link {
             padding: 1rem !important;
           }
           
@@ -41,8 +49,19 @@
           &:hover,
           &:focus,
           &:active {
-            font-weight: bold;
             border-bottom: 4px solid $color-primary;
+          }
+
+          &:hover .chart__menu-left-list-item-link,
+          &:focus .chart__menu-left-list-item-link,
+          &:active .chart__menu-left-list-item-link {
+            font-weight: bold;
+          }
+
+          .is-dropdown-submenu-item:hover,
+          .is-dropdown-submenu-item:focus,
+          .is-dropdown-submenu-item:active {
+            font-weight: bold;
           }
         }
       }
@@ -57,10 +76,18 @@
 
       &-list-item {
         padding: 0 1rem 0 1rem !important;
+
+        @include ul-min {
+          padding: 0 0 0 1rem !important;
+        }
         
         i {
         color: #d6d8d8;
         font-size: 46px;
+
+        @include ul-min {
+          font-size: 33px;
+        }
 
         &:hover,
           &:focus,
@@ -102,6 +129,12 @@
         font-size: 28px;
         line-height: 44px;
         letter-spacing: 40 * 28px / 1000;
+
+        @include ul-min {
+          font-size: 18px;
+          line-height: 30px;
+          letter-spacing: 40 * 18px / 1000;
+        }
       }
 
       &-genre {
@@ -110,6 +143,12 @@
         font-size: 22px;
         line-height: 33px;
         letter-spacing: 40 * 22px / 1000;
+
+        @include ul-min {
+          font-size: 15px;
+          line-height: 21px;
+          letter-spacing: 40 * 15px / 1000;
+        }
 
         span::after {
           content: ', ';
@@ -167,6 +206,12 @@
           font-size: 28px;
           line-height: 44px;
           letter-spacing: 40 * 28px / 1000;
+
+          @include ul-min {
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 40 * 18px / 1000;
+          }
         }
 
         &-more {
@@ -177,6 +222,12 @@
           font-size: 28px;
           line-height: 44px;
           letter-spacing: 40 * 28px / 1000;
+
+          @include ul-min {
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 40 * 18px / 1000;
+          }
         }
       }
 
@@ -189,8 +240,16 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.68);
 
+        @include ul-min {
+          padding: 18px;
+        }
+
         &__row1 {
           margin-bottom: 40px;
+
+          @include ul-min {
+            margin-bottom: 30px;
+          }
         }
 
         &-clear {
@@ -200,6 +259,10 @@
           i {
             font-size: 34px;
             color: #ffffff;
+
+            @include ul-min {
+              font-size: 22px;
+            }
           }
 
           &:hover i,
@@ -220,6 +283,12 @@
             font-size: 28px;
             line-height: 44px;
             letter-spacing: 40 * 28px / 1000;
+
+            @include ul-min {
+              font-size: 18px;
+              line-height: 30px;
+              letter-spacing: 40 * 18px / 1000;
+            }
           }
   
           &-more {
@@ -242,6 +311,10 @@
 
         &__row2 {
           margin-bottom: 40px;
+
+          @include ul-min {
+            margin-bottom: 30px;
+          }
         }
 
         &-title {
@@ -252,6 +325,12 @@
           font-size: 28px;
           line-height: 44px;
           letter-spacing: 40 * 28px / 1000;
+
+          @include ul-min {
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 40 * 18px / 1000;
+          }
 
           &:hover,
           &:focus {
@@ -265,6 +344,12 @@
           font-size: 22px;
           line-height: 33px;
           letter-spacing: 40 * 22px / 1000;
+
+          @include ul-min {
+            font-size: 15px;
+            line-height: 21px;
+            letter-spacing: 40 * 15px / 1000;
+          }
   
           span::after {
             content: ', ';
@@ -282,6 +367,10 @@
 
         &__row3 {
           margin-bottom: 40px;
+
+          @include ul-min {
+            margin-bottom: 30px;
+          }
         }
     
         &-description {
@@ -291,6 +380,12 @@
           font-size: 22px;
           line-height: 33px;
           letter-spacing: 40 * 22px / 1000;
+
+          @include ul-min {
+            font-size: 15px;
+            line-height: 21px;
+            letter-spacing: 40 * 15px / 1000;
+          }
         }
 
         &-watch {
@@ -302,6 +397,12 @@
           font-size: 28px;
           line-height: 44px;
           letter-spacing: 40 * 28px / 1000;
+
+          @include ul-min {
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 40 * 18px / 1000;
+          }
         }
       }
     }
@@ -327,6 +428,12 @@
         font-size: 55px;
         line-height: 72px;
         letter-spacing: 20 * 55px / 1000;
+
+        @include ul-min {
+          font-size: 37px;
+          line-height: 48px;
+          letter-spacing: 40 * 37px / 1000;
+        }
       }
 
       &-button {
@@ -338,6 +445,12 @@
         line-height: 44px;
         letter-spacing: 40 * 28px / 1000;
 
+        @include ul-min {
+          font-size: 19px;
+          line-height: 30px;
+          letter-spacing: 40 * 19px / 1000;
+        }
+
         &:hover,
         &:focus {
           color: #ffffff;
@@ -348,6 +461,11 @@
     &-more {
       margin-top: 90px;
       margin-bottom: 90px;
+
+      @include ul-min {
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
 
       &-loading {
         display: inline-block;
@@ -361,6 +479,12 @@
         line-height: 33px;
         letter-spacing: 40 * 22px / 1000;
         text-transform: uppercase;
+
+        @include ul-min {
+          font-size: 15px;
+          line-height: 21px;
+          letter-spacing: 40 * 15px / 1000;
+        }
       }
     }
   }

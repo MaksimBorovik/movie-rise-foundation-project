@@ -1,3 +1,10 @@
+
+@mixin ul-min {
+  @media (max-width: 2100px) and (min-width: $ul) {
+    @content;
+  }
+}
+
 /* xl */
 @mixin xl-min {
   @media (min-width: $xl) {

@@ -6,6 +6,10 @@
   padding-top: 6px;
   padding-bottom: 6px;
 
+  @include ul-min {
+    width: 160px;
+  }
+
   &:hover,
   &:focus,
   &.active {
@@ -27,4 +31,10 @@
   letter-spacing: 1 * 24px / 1000;
   text-align: center;
   vertical-align: middle;
+
+  @include ul-min {
+    width: 40px;
+    font-size: 16px;
+    line-height: 21px;
+  }
 }

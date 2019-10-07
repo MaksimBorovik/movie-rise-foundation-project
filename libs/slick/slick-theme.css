@@ -120,6 +120,13 @@
     margin-bottom: 65px
 }
 
+@media (max-width: 1440px) {
+    .slick-dotted.slick-slider {
+        /* margin-bottom: 30px; */
+        margin-bottom: 30px
+    }
+}
+
 .slick-dots
 {
     position: absolute;
