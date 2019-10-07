@@ -1,4 +1,10 @@
 .footer {
+  padding-top: 68px;
+  background-color: #ffffff;
+
+  &__top {
+    padding-bottom: 68px;
+  }
 
   &__menu {
 
@@ -48,6 +54,22 @@
       &:focus {
         color: $color-primary;
       }
+    }
+  }
+
+  &__copyright {
+    font-family: 'HelveticaNeue-Roman';
+    color: #a7aaab;
+    font-size: 24px;
+    line-height: 44px;
+    letter-spacing: 40 * 28px / 1000;
+
+    &-bold {
+      font-family: 'Helvetica Neue Condensed Black';
+    }
+
+    &-light {
+      font-family: 'HelveticaNeue Light';
     }
   }
 }

@@ -562,6 +562,15 @@ body {
   color: #ffffff;
 }
 
+.footer {
+  padding-top: 68px;
+  background-color: #ffffff;
+}
+
+.footer__top {
+  padding-bottom: 68px;
+}
+
 .footer__menu-link {
   margin-right: 20px;
   font-family: 'HelveticaNeue-Roman';
@@ -600,4 +609,20 @@ body {
 
 .footer__social-item:hover, .footer__social-item:focus {
   color: #0aaee4;
+}
+
+.footer__copyright {
+  font-family: 'HelveticaNeue-Roman';
+  color: #a7aaab;
+  font-size: 24px;
+  line-height: 44px;
+  letter-spacing: 1.12px;
+}
+
+.footer__copyright-bold {
+  font-family: 'Helvetica Neue Condensed Black';
+}
+
+.footer__copyright-light {
+  font-family: 'HelveticaNeue Light';
 }
