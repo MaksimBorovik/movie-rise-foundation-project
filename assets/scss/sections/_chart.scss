@@ -344,5 +344,24 @@
         }
       }
     }
+
+    &-more {
+      margin-top: 90px;
+      margin-bottom: 90px;
+
+      &-loading {
+        display: inline-block;
+        @include loader10(18px, $color-primary);
+      }
+
+      &-text {
+        color: #acafb0;
+        font-family: 'HelveticaNeue Medium';
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 40 * 22px / 1000;
+        text-transform: uppercase;
+      }
+    }
   }
 }
