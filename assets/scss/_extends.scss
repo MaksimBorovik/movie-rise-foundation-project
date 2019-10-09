@@ -10,6 +10,14 @@
     width: 160px;
   }
 
+  @include ul {
+    width: 120px;
+  }
+
+  @include xl {
+    width: 90px;
+  }
+
   &:hover,
   &:focus,
   &.active {
@@ -36,5 +44,17 @@
     width: 40px;
     font-size: 16px;
     line-height: 21px;
+  }
+
+  @include ul {
+    width: 30px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  @include xl {
+    width: 30px;
+    font-size: 11px;
+    line-height: 17px;
   }
 }

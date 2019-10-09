@@ -5,9 +5,15 @@
   }
 }
 
+@mixin ul {
+  @media (max-width: $ul - 1) {
+    @content;
+  }
+}
+
 /* xl */
 @mixin xl-min {
-  @media (min-width: $xl) {
+  @media (man-width: $xl) {
     @content;
   }
 }

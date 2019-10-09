@@ -1,6 +1,7 @@
 .header {
 
   &__top {
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -13,6 +14,12 @@
 
     @include ul-min {
       padding-top: 20px;
+      min-height: 90px;
+    }
+
+    @include ul {
+      padding-top: 10px;
+      min-height: 50px;
     }
 
     &-logo {
@@ -28,7 +35,20 @@
 
         @include ul-min {
           font-size: 30px;
-        line-height: 32px;
+          line-height: 32px;
+          etter-spacing: 40 * 30px / 1000;
+        }
+
+        @include ul {
+          font-size: 30px;
+          line-height: 32px;
+          etter-spacing: 40 * 30px / 1000;
+        }
+
+        @include xl {
+          font-size: 25px;
+          line-height: 27px;
+          etter-spacing: 40 * 25px / 1000;
         }
   
         &-light {
@@ -40,6 +60,18 @@
           @include ul-min {
             font-size: 30px;
             line-height: 32px;
+          }
+
+          @include ul {
+            font-size: 30px;
+            line-height: 32px;
+            etter-spacing: 40 * 30px / 1000;
+          }
+
+          @include xl {
+            font-size: 25px;
+            line-height: 27px;
+            etter-spacing: 40 * 25px / 1000;
           }
         }
       }
@@ -56,6 +88,19 @@
       @include ul-min {
         font-size: 19px;
         line-height: 30px;
+        letter-spacing: 40 * 19px / 1000;
+      }
+
+      @include ul {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 40 * 16px / 1000;
+      }
+
+      @include xl {
+        font-size: 14px;
+        line-height: 25px;
+        etter-spacing: 40 * 14px / 1000;
       }
 
       a {
@@ -77,6 +122,14 @@
           font-size: 23px;
         }
 
+        @include ul {
+          font-size: 23px;
+        }
+
+        @include xl {
+          font-size: 19px;
+        }
+
         &:hover,
         &:focus {
           color: $color-primary; 
@@ -92,6 +145,10 @@
       list-style: none;
       padding: 0;
       margin: 0;
+
+      @include xl {
+        margin-bottom: 10px !important;
+      }
     }
 
     &-item {
@@ -118,6 +175,20 @@
           margin-bottom: 15px;
           font-size: 40px;
           line-height: 34px;
+          letter-spacing: 40 * 40px / 1000;
+        }
+
+        @include ul {
+          margin-bottom: 10px;
+          font-size: 30px;
+          line-height: 26px;
+          letter-spacing: 40 * 30px / 1000;
+        }
+
+        @include xl {
+          font-size: 25px;
+          line-height: 26px;
+          letter-spacing: 40 * 25px / 1000;
         }
       }
 
@@ -126,6 +197,10 @@
 
         @include ul-min {
           margin-bottom: 20px;
+        }
+
+        @include ul {
+          margin-bottom: 10px;
         }
         
         &-category {
@@ -137,6 +212,21 @@
           @include ul-min {
             font-size: 16px;
             line-height: 32px;
+            letter-spacing: 40 * 16px / 1000;
+          }
+
+          @include ul {
+            margin-right: 20px;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: 40 * 12px / 1000;
+          }
+
+          @include xl {
+            margin-right: 10px;
+            font-size: 11px;
+            line-height: 12px;
+            letter-spacing: 40 * 11px / 1000;
           }
 
           &:nth-last-of-type(4) {
@@ -156,6 +246,14 @@
         @include ul-min {
           margin-bottom: 40px;
         }
+
+        @include ul {
+          margin-bottom: 20px;
+        }
+
+        @include xl {
+          margin-bottom: 10px;
+        }
        
         i {
           display: inline-block;
@@ -165,6 +263,14 @@
 
           @include ul-min {
             font-size: 24px;
+          }
+
+          @include ul {
+            font-size: 18px;
+          }
+
+          @include xl {
+            font-size: 15px;
           }
         }
 
@@ -183,10 +289,27 @@
           margin-bottom: 40px;
           font-size: 21px;
           line-height: 34px;
+          letter-spacing: 1 * 21px / 1000;
+        }
+
+        @include ul {
+          margin-bottom: 20px;
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: 40 * 16px / 1000;
+        }
+
+        @include xl {
+          margin-bottom: 10px;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 40 * 14px / 1000;
         }
       }
 
       &-buttons {
+        display: flex;
+        align-items: center;
 
         a {
           display: inline-block;
@@ -202,12 +325,34 @@
             line-height: 30px;
           }
 
+          @include ul {
+            margin-right: 15px;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 40 * 16px / 1000;
+          }
+
+          @include xl {
+            margin-right: 12px;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 40 * 14px / 1000;
+          }
+
           &:nth-last-child(2) {
             margin-right: 25px;
 
             @include ul-min {
               margin-right: 16px;
             }
+
+            @include ul {
+              margin-right: 10px;
+            }
+          }
+
+          &:nth-last-child(1) {
+            margin-right: 0;
           }
         }
 
@@ -218,10 +363,16 @@
         }
         
         &-more {
-          vertical-align: middle;
+          display: flex;
+          align-items: center;
           
           i {
+            display: flex;
             font-size: 30px;
+
+            @include ul {
+              font-size: 24px;
+            }
           }
         }
 

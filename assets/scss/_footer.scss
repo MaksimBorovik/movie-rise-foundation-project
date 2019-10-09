@@ -2,11 +2,19 @@
   padding-top: 68px;
   background-color: #ffffff;
 
+  @include ul {
+    padding-top: 40px;
+  }
+
   &__top {
     padding-bottom: 68px;
 
     @include ul-min {
       padding-bottom: 48px;
+    }
+
+    @include ul {
+      padding-bottom: 36px;
     }
   }
 
@@ -24,6 +32,12 @@
         font-size: 16px;
         line-height: 32px;
         letter-spacing: 40 * 16px / 1000;
+      }
+
+      @include ul {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 40 * 14px / 1000;
       }
 
       &:hover,
@@ -62,7 +76,10 @@
 
       @include ul-min {
         font-size: 22px;
-        letter-spacing: 40 * 22px / 1000;
+      }
+
+      @include ul {
+        font-size: 18px;
       }
 
       &:hover,
@@ -85,6 +102,13 @@
       font-size: 16px;
       line-height: 32px;
       letter-spacing: 40 * 16px / 1000;
+    }
+
+    @include ul {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 40 * 14px / 1000;
     }
 
     &-bold {
