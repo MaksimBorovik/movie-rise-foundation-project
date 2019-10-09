@@ -18,6 +18,10 @@
     width: 90px;
   }
 
+  @include lg {
+    width: 120px;
+  }
+
   &:hover,
   &:focus,
   &.active {

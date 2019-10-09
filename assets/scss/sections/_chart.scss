@@ -18,8 +18,6 @@
     @include xl {
       margin-bottom: 10px;
     }
-
-    margin-right: 15px;
     
     &::after {
       margin-right: 15px;
@@ -55,11 +53,22 @@
             letter-spacing: 40 * 16px / 1000;
           }
 
+          @include lg {
+            font-size: 15px;
+            line-height: 40px;
+            letter-spacing: -10 * 15px / 1000;
+            border-bottom: 2px solid transparent;
+          }
+
           &-link {
             padding: 1rem !important;
 
             @include xl {
               padding: 0.5rem !important;
+            }
+
+            @include lg {
+              padding: 0.25rem !important;
             }
           }
           
@@ -69,12 +78,21 @@
             @include xl {
               padding: 0.5rem 0.5rem 0.5rem 0 !important;
             }
+
+            @include lg {
+              padding: 0.25rem 0.25rem 0.25rem 0 !important;
+            }
           }
 
           &:hover,
           &:focus,
           &:active {
             border-bottom: 4px solid $color-primary;
+
+            @include lg {
+              border-bottom: 2px solid $color-primary;
+
+            }
           }
 
           &:hover .chart__menu-left-list-item-link,
@@ -118,6 +136,10 @@
           font-size: 27px;
         }
 
+        @include lg {
+          font-size: 24px;
+        }
+
         &:hover,
           &:focus,
           &:active {
@@ -137,12 +159,19 @@
         position: relative;
         border-radius: 6px;
 
+        @include md {
+          margin-bottom: 15px;
+        }
+
         &:hover .chart__list-item-info {
           opacity: 1;
         }
 
         &-section {
-          display: none; // !!!!
+          // display: none; // !!!!
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
           height: 20%; 
           position: absolute;
           left: 0;
@@ -181,6 +210,19 @@
           line-height: 30px;
           letter-spacing: 40 * 22px / 1000;
         }
+
+        @include lg {
+          margin-bottom: 6px;
+          font-size: 16px;
+          line-height: 18px;
+          letter-spacing: 30 * 12px / 1000;
+        }
+
+        @include md {
+          font-size: 23px;
+          line-height: 30px;
+          letter-spacing: 40 * 23px / 1000;
+        }
       }
 
       &-genre {
@@ -205,7 +247,19 @@
         @include xl {
           font-size: 18px;
           line-height: 30px;
-          letter-spacing: 40 * 18px / 1000;
+          letter-spacing: 10 * 18px / 1000;
+        }
+
+        @include lg {
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 30 * 14px / 1000;
+        }
+
+        @include md {
+          font-size: 18px;
+          line-height: 30px;
+          letter-spacing: 10 * 18px / 1000;
         }
 
         span::after {
@@ -224,7 +278,7 @@
         @include xl {
           width: 40px;
           font-size: 16px;
-          line-height: 21px;
+          line-height: 25px;
         }
       }
 
@@ -268,6 +322,20 @@
               left: calc(50% - 25px);
               top: calc(50% - 25px);
             }
+
+            @include lg {
+              width: 40px;
+              height: 40px;
+              left: calc(50% - 20px);
+              top: calc(50% - 20px);
+            }
+
+            @include md {
+              width: 50px;
+              height: 50px;
+              left: calc(50% - 25px);
+              top: calc(50% - 25px);
+            }
           }
 
           i {
@@ -280,6 +348,14 @@
             }
 
             @include xl {
+              font-size: 125px;
+            }
+
+            @include lg {
+              font-size: 95px;
+            }
+
+            @include md {
               font-size: 125px;
             }
           }
@@ -341,6 +417,19 @@
             line-height: 28px;
             letter-spacing: 40 * 22px / 1000;
           }
+
+          @include lg {
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 40 * 18px / 1000;
+          }
+
+          @include md {
+            width: 160px;
+            font-size: 22px;
+            line-height: 32px;
+            letter-spacing: 40 * 22px / 1000;
+          }
         }
       }
 
@@ -365,6 +454,14 @@
           padding: 15px;
         }
 
+        @include lg {
+          padding: 10px;
+        }
+
+        @include md {
+          padding: 15px;
+        }
+
         &__row1 {
           margin-bottom: 40px;
 
@@ -377,6 +474,14 @@
           }
 
           @include xl {
+            margin-bottom: 30px;
+          }
+
+          @include lg {
+            margin-bottom: 17px;
+          }
+
+          @include md {
             margin-bottom: 30px;
           }
         }
@@ -398,6 +503,14 @@
             }
 
             @include xl {
+              font-size: 22px;
+            }
+
+            @include lg {
+              font-size: 16px;
+            }
+
+            @include md {
               font-size: 22px;
             }
           }
@@ -434,6 +547,18 @@
             }
 
             @include xl {
+              font-size: 18px;
+              line-height: 30px;
+              letter-spacing: 40 * 18px / 1000;
+            }
+
+            @include lg {
+              font-size: 14px;
+              line-height: 22px;
+              letter-spacing: 40 * 14px / 1000;
+            }
+
+            @include md {
               font-size: 18px;
               line-height: 30px;
               letter-spacing: 40 * 18px / 1000;
@@ -479,6 +604,14 @@
           @include xl {
             margin-bottom: 30px;
           }
+
+          @include lg {
+            margin-bottom: 17px;
+          }
+
+          @include md {
+            margin-bottom: 30px;
+          }
         }
 
         &-title {
@@ -506,6 +639,18 @@
             font-size: 18px;
             line-height: 30px;
             letter-spacing: 40 * 18px / 1000;
+          }
+
+          @include lg {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 30 * 14px / 1000;
+          }
+
+          @include md {
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 40 * 20px / 1000;
           }
 
           &:hover,
@@ -538,6 +683,18 @@
             line-height: 21px;
             letter-spacing: 40 * 15px / 1000;
           }
+
+          @include lg {
+            font-size: 11px;
+            line-height: 16px;
+            letter-spacing: 30 * 11px / 1000;
+          }
+
+          @include md {
+            font-size: 16px;
+            line-height: 21px;
+            letter-spacing: 40 * 15px / 1000;
+          }
   
           span::after {
             content: ', ';
@@ -551,6 +708,12 @@
         &-badge {
           color: $color-secondary;
           @extend %badge;
+
+          @include md {
+            width: 40px;
+            font-size: 16px;
+            line-height: 25px;
+          }
         }
 
         &__row3 {
@@ -595,6 +758,12 @@
             line-height: 21px;
             letter-spacing: 40 * 15px / 1000;
           }
+
+          @include xl {
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 40 * 16px / 1000;
+          }
         }
 
         &-watch {
@@ -625,6 +794,19 @@
             line-height: 30px;
             letter-spacing: 40 * 18px / 1000;
           }
+
+          @include lg {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 30 * 14px / 1000;
+          }
+
+          @include md {
+            width: 160px;
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 40 * 18px / 1000;
+          }
         }
       }
     }
@@ -632,6 +814,11 @@
     &-subscribe {
       margin-top: 10px;
       margin-bottom: 40px;
+
+      @include md {
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
 
       &-wrapper {
         padding-top: 140px;
@@ -716,6 +903,11 @@
         margin-bottom: 50px;
       }
 
+      @include ul {
+        margin-top: 20px;
+        margin-bottom: 25px;
+      }
+
       &-loading {
         display: inline-block;
         @include loader10(18px, $color-primary);
@@ -759,4 +951,14 @@
   @include xl {
     right: 0 !important;
   }
+
+  @include lg {
+    top: 11px;
+    right: -5px !important;
+  }
+}
+
+.title-bar {
+  background: #000000;
+  margin-bottom: 15px;
 }

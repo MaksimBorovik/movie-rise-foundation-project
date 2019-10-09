@@ -25,6 +25,10 @@
     &-logo {
       // padding: 0;
 
+      @include md {
+        align-self: flex-start;
+      }
+
       &-link {
         display: block;
         color: #ffffff;
@@ -44,12 +48,6 @@
           line-height: 32px;
           etter-spacing: 40 * 30px / 1000;
         }
-
-        @include xl {
-          font-size: 25px;
-          line-height: 27px;
-          etter-spacing: 40 * 25px / 1000;
-        }
   
         &-light {
           font-family: 'Helvetica Neue';
@@ -67,18 +65,13 @@
             line-height: 32px;
             etter-spacing: 40 * 30px / 1000;
           }
-
-          @include xl {
-            font-size: 25px;
-            line-height: 27px;
-            etter-spacing: 40 * 25px / 1000;
-          }
         }
       }
     }
 
     &-controls {
       // padding: 0;
+      
       color: #ffffff;
       font-family: 'HelveticaNeue-Roman';
       font-size: 28px;
@@ -97,10 +90,11 @@
         letter-spacing: 40 * 16px / 1000;
       }
 
-      @include xl {
-        font-size: 14px;
-        line-height: 25px;
-        etter-spacing: 40 * 14px / 1000;
+      @include md {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex-wrap: wrap;
       }
 
       a {
@@ -112,6 +106,14 @@
       &-signin,
       &-signup {
         @extend %button;
+
+        @include xl {
+          width: 120px;
+        }
+
+        @include md {
+          margin-bottom: 10px;
+        }
       }
 
       &-search i {
@@ -126,8 +128,9 @@
           font-size: 23px;
         }
 
-        @include xl {
-          font-size: 19px;
+        @include md {
+          padding-right: 30px;
+          margin-bottom: 10px;
         }
 
         &:hover,
@@ -149,6 +152,10 @@
       @include xl {
         margin-bottom: 10px !important;
       }
+
+      @include xl {
+        margin-bottom: 0 !important;
+      }
     }
 
     &-item {
@@ -157,6 +164,10 @@
       align-items: center;
       color: #ffffff;
       font-family: 'HelveticaNeue-Roman';
+
+      @include xl {
+        min-height: 100vh;
+      }
 
       &-caption {
         // padding-left: 0;
@@ -183,12 +194,6 @@
           font-size: 30px;
           line-height: 26px;
           letter-spacing: 40 * 30px / 1000;
-        }
-
-        @include xl {
-          font-size: 25px;
-          line-height: 26px;
-          letter-spacing: 40 * 25px / 1000;
         }
       }
 
@@ -222,13 +227,6 @@
             letter-spacing: 40 * 12px / 1000;
           }
 
-          @include xl {
-            margin-right: 10px;
-            font-size: 11px;
-            line-height: 12px;
-            letter-spacing: 40 * 11px / 1000;
-          }
-
           &:nth-last-of-type(4) {
             margin-right: 25px;
           }
@@ -250,10 +248,6 @@
         @include ul {
           margin-bottom: 20px;
         }
-
-        @include xl {
-          margin-bottom: 10px;
-        }
        
         i {
           display: inline-block;
@@ -267,10 +261,6 @@
 
           @include ul {
             font-size: 18px;
-          }
-
-          @include xl {
-            font-size: 15px;
           }
         }
 
@@ -297,13 +287,6 @@
           font-size: 16px;
           line-height: 26px;
           letter-spacing: 40 * 16px / 1000;
-        }
-
-        @include xl {
-          margin-bottom: 10px;
-          font-size: 14px;
-          line-height: 16px;
-          letter-spacing: 40 * 14px / 1000;
         }
       }
 
@@ -332,13 +315,6 @@
             letter-spacing: 40 * 16px / 1000;
           }
 
-          @include xl {
-            margin-right: 12px;
-            font-size: 14px;
-            line-height: 20px;
-            letter-spacing: 40 * 14px / 1000;
-          }
-
           &:nth-last-child(2) {
             margin-right: 25px;
 
@@ -360,6 +336,10 @@
         &-info {
           @extend %button;
           border-color: #ffffff;
+
+          @include xl {
+            width: 120px;
+          }
         }
         
         &-more {

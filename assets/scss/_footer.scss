@@ -6,6 +6,10 @@
     padding-top: 40px;
   }
 
+  @include md {
+    padding-top: 20px;
+  }
+
   &__top {
     padding-bottom: 68px;
 
@@ -19,6 +23,12 @@
   }
 
   &__menu {
+
+    @include md {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
 
     &-link {
       margin-right: 20px;
@@ -40,6 +50,12 @@
         letter-spacing: 40 * 14px / 1000;
       }
 
+      @include md {
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
       &:hover,
       &:focus,
       &:active {
@@ -49,6 +65,10 @@
   }
 
   &__logo {
+
+    @include xl {
+      margin-top: 30px;
+    }
 
     &-link {
       @extend .header__top-logo-link;
@@ -69,6 +89,10 @@
     display: flex;
     justify-content: flex-end;
 
+    @include md {
+      justify-content: center;
+    }
+
     &-item {
       margin-left: 25px;
       font-size: 34px;
@@ -80,6 +104,14 @@
 
       @include ul {
         font-size: 18px;
+      }
+
+      @include md {
+        font-size: 20px;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
       }
 
       &:hover,
