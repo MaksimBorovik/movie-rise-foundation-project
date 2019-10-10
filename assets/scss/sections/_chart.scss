@@ -168,8 +168,8 @@
         }
 
         &-section {
-          // display: none; // !!!!
-          display: flex;
+          display: none; // !!!!
+          // display: flex;
           align-items: center;
           flex-wrap: wrap;
           height: 20%; 
@@ -223,6 +223,13 @@
           line-height: 30px;
           letter-spacing: 40 * 23px / 1000;
         }
+
+        @include sm {
+          margin-bottom: 6px;
+          font-size: 16px;
+          line-height: 18px;
+          letter-spacing: 30 * 12px / 1000;
+        }
       }
 
       &-genre {
@@ -260,6 +267,12 @@
           font-size: 18px;
           line-height: 30px;
           letter-spacing: 10 * 18px / 1000;
+        }
+
+        @include sm {
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 30 * 14px / 1000;
         }
 
         span::after {
@@ -336,6 +349,13 @@
               left: calc(50% - 25px);
               top: calc(50% - 25px);
             }
+
+            @include sm {
+              width: 40px;
+              height: 40px;
+              left: calc(50% - 20px);
+              top: calc(50% - 20px);
+            }
           }
 
           i {
@@ -357,6 +377,10 @@
 
             @include md {
               font-size: 125px;
+            }
+
+            @include sm {
+              font-size: 75px;
             }
           }
         }
@@ -387,6 +411,13 @@
             font-size: 22px;
             line-height: 30px;
             letter-spacing: 40 * 22px / 1000;
+          }
+
+          @include sm {
+            margin-bottom: 40px;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 40 * 14px / 1000;
           }
         }
 
@@ -430,6 +461,13 @@
             line-height: 32px;
             letter-spacing: 40 * 22px / 1000;
           }
+
+          @include sm {
+            width: 120px;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 40 * 18px / 1000;
+          }
         }
       }
 
@@ -462,6 +500,10 @@
           padding: 15px;
         }
 
+        @include sm {
+          padding: 10px;
+        }
+
         &__row1 {
           margin-bottom: 40px;
 
@@ -484,9 +526,14 @@
           @include md {
             margin-bottom: 30px;
           }
+
+          @include sm {
+            margin-bottom: 17px;
+          }
         }
 
         &-clear {
+          margin-left: -2px;
           display: flex;
           align-items: center;
           
@@ -512,6 +559,10 @@
 
             @include md {
               font-size: 22px;
+            }
+
+            @include md {
+              font-size: 16px;
             }
           }
 
@@ -570,13 +621,13 @@
             align-items: center;
             
             i {
-              margin-right: -12px;
+              margin-right: -14px;
               vertical-align:bottom;
               color: #ffffff;
               font-size: 30px;
 
               @include ul {
-                margin-right: -7px;
+                margin-right: -10px;
                 font-size: 18px;
               }
             }
@@ -611,6 +662,10 @@
 
           @include md {
             margin-bottom: 30px;
+          }
+
+          @include sm {
+            margin-bottom: 17px;
           }
         }
 
@@ -651,6 +706,12 @@
             font-size: 20px;
             line-height: 30px;
             letter-spacing: 40 * 20px / 1000;
+          }
+
+          @include sm {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 30 * 14px / 1000;
           }
 
           &:hover,
@@ -694,6 +755,12 @@
             font-size: 16px;
             line-height: 21px;
             letter-spacing: 40 * 15px / 1000;
+          }
+
+          @include sm {
+            font-size: 11px;
+            line-height: 16px;
+            letter-spacing: 30 * 11px / 1000;
           }
   
           span::after {
@@ -759,10 +826,17 @@
             letter-spacing: 40 * 15px / 1000;
           }
 
-          @include xl {
+          @include md {
             font-size: 16px;
             line-height: 26px;
             letter-spacing: 40 * 16px / 1000;
+          }
+
+          @include sm {
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 30 * 14px / 1000;
           }
         }
 
@@ -806,6 +880,13 @@
             font-size: 18px;
             line-height: 30px;
             letter-spacing: 40 * 18px / 1000;
+          }
+
+          @include sm {
+            width: 120px;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 30 * 14px / 1000;
           }
         }
       }
