@@ -1,5 +1,70 @@
 .header {
 
+  &__mobile {
+    background: black;
+    height: auto;
+
+    &-menu {
+      position: relative;
+      padding-top: 25px;
+      padding-bottom: 25px;
+
+      &-sign-in {
+        margin-bottom: 20px;
+        
+        p {
+          margin-bottom: 10px;
+          font-family: 'HelveticaNeue Bold';
+          color: $color-primary;
+        }
+
+        input {
+          font-family: 'HelveticaNeue Bold';
+
+          &:focus {
+            box-shadow: 0 0 15px $color-primary;
+          }
+        }
+
+        &-next {
+          @extend %button;
+          font-family: 'HelveticaNeue Medium';
+          color: #ffffff;
+          display: inline-block;
+          
+        }
+      }
+
+      &-sign-up {
+        display: flex;
+        justify-content: center;
+        
+        span {
+          font-family: 'HelveticaNeue Bold';
+          color: #ffffff;
+        } 
+
+        &-create {
+          font-family: 'HelveticaNeue Bold';
+          color: $color-primary;
+        }
+      }
+
+      &-close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        color: #ffffff;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
   &__top {
     position: absolute;
     top: 0;
@@ -89,6 +154,12 @@
         letter-spacing: 40 * 16px / 1000;
       }
 
+      @include lg-landscape {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 40 * 14px / 1000;
+      }
+
       @include md {
         display: flex;
         flex-direction: column;
@@ -137,6 +208,16 @@
           color: $color-primary; 
         }
       }
+
+      &-mobile {
+        display: flex;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+          color: $color-primary;
+        }
+      }
     }
   }
 
@@ -152,7 +233,7 @@
         margin-bottom: 10px !important;
       }
 
-      @include xl {
+      @include md {
         margin-bottom: 0 !important;
       }
     }
@@ -164,13 +245,16 @@
       color: #ffffff;
       font-family: 'HelveticaNeue-Roman';
 
-      @include xl {
+      @include ul {
         min-height: 100vh;
+      }
+
+      @include lg-landscape {
+        margin-bottom: 0px;
       }
 
       @include sm {
         padding-bottom: 50px;
-        align-items: flex-end;
       }
 
       &-caption {
@@ -200,6 +284,13 @@
           letter-spacing: 40 * 30px / 1000;
         }
 
+        @include lg-landscape {
+          margin-bottom: 0;
+          font-size: 25px;
+          line-height: 26px;
+          letter-spacing: 40 * 25px / 1000;
+        }
+
         @include sm {
           margin-bottom: 0;
           font-size: 25px;
@@ -217,6 +308,10 @@
 
         @include ul {
           margin-bottom: 10px;
+        }
+
+        @include lg-landscape {
+          margin-bottom: 0;
         }
 
         @include sm {
@@ -273,6 +368,10 @@
           margin-bottom: 20px;
         }
 
+        @include lg-landscape {
+          margin-bottom: 0;
+        }
+
         @include sm {
           margin-bottom: 10px;
         }
@@ -289,6 +388,10 @@
 
           @include ul {
             font-size: 18px;
+          }
+
+          @include lg-landscape {
+            font-size: 14px;
           }
         }
 
@@ -317,8 +420,23 @@
           letter-spacing: 40 * 16px / 1000;
         }
 
-        @include ul {
+        @include lg-landscape {
+          margin-bottom: 10px;
           text-align: justify;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 40 * 12px / 1000;
+        }
+
+        @include md {
+          padding-right: 40px;
+          text-align: justify;
+        }
+
+        @include sm {
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 40 * 12px / 1000;
         }
       }
 
@@ -329,6 +447,16 @@
         @include ul {
           flex-direction: column;
           align-items: flex-start;
+        }
+
+        @include ul-landscape {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        @include sm {
+          align-items: flex-end;
         }
 
         a {
@@ -347,9 +475,19 @@
 
           @include ul {
             margin-right: 0;
+            margin-bottom: 10px;
             font-size: 16px;
             line-height: 30px;
             letter-spacing: 40 * 16px / 1000;
+          }
+
+          @include lg-landscape {
+            margin-right: 0;
+            justify-content: space-around;
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 40 * 14px / 1000;
           }
 
           @include sm {
@@ -417,5 +555,13 @@
         }
       }
     }
+  }
+}
+
+.slick-dots {
+  bottom: 75px;
+
+  @include lg-landscape {
+    bottom: 45px;
   }
 }

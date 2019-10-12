@@ -11,15 +11,27 @@
   }
 }
 
-/* xl */
-@mixin xl-min {
-  @media (man-width: $xl) {
+@mixin ul-landscape {
+  @media (max-width: $ul - 1) and (orientation: landscape) {
     @content;
   }
 }
 
+/* xl */
+@mixin xl-min {
+  @media (min-width: $xl) {
+    @content;
+  }
+}
+ 
 @mixin xl {
   @media (max-width: $xl - 1) {
+    @content;
+  }
+}
+
+@mixin xl-landscape {
+  @media (max-width: $xl - 1) and (orientation: landscape) {
     @content;
   }
 }
@@ -57,6 +69,12 @@
 
 @mixin lg {
   @media (max-width: $lg - 1) {
+    @content;
+  }
+}
+
+@mixin lg-landscape {
+  @media (max-width: $lg - 1) and (orientation: landscape) {
     @content;
   }
 }
