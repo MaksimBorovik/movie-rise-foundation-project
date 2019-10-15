@@ -1,3 +1,5 @@
+include ../mixins/_mixins.pug
+
 .footer__top.row.align-justify.align-middle
   .footer__menu.column.small-12.medium-6.medium-order-1.large-4.large-order-1
     a.footer__menu-link(href="#") About
@@ -7,16 +9,11 @@
     a.footer__logo-link(href="#") MOVIE
       span.footer__logo-link-light RISE
   .footer__social.column.small-12.medium-6.medium-order-2.large-4.large-order-3
-    a.footer__social-item(href="#")
-      <i class="fab fa-facebook-f"></i>
-    a.footer__social-item(href="#")
-      <i class="fab fa-twitter"></i>
-    a.footer__social-item(href="#")
-      <i class="fab fa-pinterest-p"></i>
-    a.footer__social-item(href="#")
-      <i class="fab fa-instagram"></i>
-    a.footer__social-item(href="#")
-      <i class="fab fa-youtube"></i>
+    +socialLinks('footer__social-item', '#', 'facebook-f')
+    +socialLinks('footer__social-item', '#', 'twitter')
+    +socialLinks('footer__social-item', '#', 'pinterest-p')
+    +socialLinks('footer__social-item', '#', 'instagram')
+    +socialLinks('footer__social-item', '#', 'youtube')
 .row
   .column.text-center
     .footer__copyright 

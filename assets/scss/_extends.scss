@@ -42,9 +42,7 @@
   border: 2px solid $color-secondary;
   border-radius: 6px;
   font-family: 'HelveticaNeue Medium';
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 1 * 24px / 1000;
+  @include font-settings(24px, 32px, 1);
   text-align: center;
   vertical-align: middle;
 

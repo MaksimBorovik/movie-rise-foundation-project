@@ -1,4 +1,69 @@
-mixin list(className,...items)
-  ul(class=className)
-    each item in items
-      li(class='fab fa-' +item)= item
+mixin sliderItem(data)
+  li.header__slider-item(style="background-image: url(" + data.image + "); background-position: 50% 50%; background-size: cover;")
+    .row
+      .header__slider-item-caption.columns.small-12.medium-8.large-5
+        h2.header__slider-item-title= data.name
+        .header__slider-item-categories
+          span.header__slider-item-categories-category= data.genre[1]
+          span.header__slider-item-categories-category= data.genre[2]
+          span.header__slider-item-categories-category= data.genre[3]
+          span.header__slider-item-categories-category= data.genre[4]
+          span.header__slider-item-categories-category= data.time
+        .header__slider-item-rating
+          i(class="material-icons") star_border
+          i(class="material-icons") star_border
+          i(class="material-icons") star_border
+          i(class="material-icons") star_border
+          i(class="material-icons") star_border
+          span.header__slider-item-rating-badge= data.rating
+        p.header__slider-item-description= data.description
+        .header__slider-item-buttons
+          a.header__slider-item-buttons-watch.active(href="#") Watch Now
+          a.header__slider-item-buttons-info(href="#") View Info
+          a.header__slider-item-buttons-favorites(href="#") + Favorites
+          a.header__slider-item-buttons-more(href="#")
+            i(class="material-icons") more_vert
+
+mixin movieBlock(data)
+  .chart__list-item.column.small-12.medium-6.large-3
+    .card
+      .chart__list-item-info
+        a.chart__list-item-info-play(href="#")
+          i(class="material-icons") play_circle_filled
+        p.chart__list-item-info-caption Watch Now
+        a.chart__list-item-info-more(href="#") View Info
+      .chart__list-item-full-info(data-closable)
+        .row.chart__list-item-full-info__row1
+          .column.small-6.chart__list-item-full-info-clear
+            i(class="material-icons" data-close) clear
+          .column.small-6.chart__list-item-full-info-buttons
+            a.chart__list-item-full-info-buttons-favorites(href="#") + Favorites
+            a.chart__list-item-full-info-buttons-more(href="#")
+              i(class="material-icons") more_vert
+        .row.chart__list-item-full-info__row2
+          .column.small-9
+            a(href="#").chart__list-item-full-info-title= data.movieName
+            div.chart__list-item-full-info-genre
+              each item in data.genre
+                span= item
+          .column.small-3.text-right
+            span.chart__list-item-full-info-badge= data.rating
+        .row.chart__list-item-full-info__row3
+          .column
+            p.chart__list-item-full-info-description= data.description
+        .row
+          .column
+            a.chart__list-item-full-info-watch(href="#") Watch Now
+      img(src= data.imageHref)
+      .card-section.row
+        .column.small-9
+          p.chart__list-item-title= data.movieName
+          div.chart__list-item-genre
+            each item in data.genre
+              span= item
+        .column.small-3
+          span.chart__list-item-badge= data.rating
+
+mixin socialLinks(className, href, item)
+  a(class= className href= href)
+    i(class='fab fa-' +item)

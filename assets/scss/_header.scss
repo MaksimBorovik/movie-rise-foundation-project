@@ -97,27 +97,19 @@
         display: block;
         color: #ffffff;
         font-family: 'Helvetica Neue Condensed Black';
-        font-size: 50px;
-        line-height: 65px;
-        letter-spacing: 40 * 50px / 1000;
+        @include font-settings(50px, 65px, 40);
 
         @include ul-min {
-          font-size: 30px;
-          line-height: 32px;
-          etter-spacing: 40 * 30px / 1000;
+          @include font-settings(30px, 32px, 40);
         }
 
         @include ul {
-          font-size: 30px;
-          line-height: 32px;
-          etter-spacing: 40 * 30px / 1000;
+          @include font-settings(30px, 32px, 40);
         }
 
         &-light {
           font-family: 'Helvetica Neue';
-          font-size: 50px;
-          line-height: 65px;
-          letter-spacing: 40 * 50px / 1000;
+          @include font-settings(50px, 65px, 40);
 
           @include ul-min {
             font-size: 30px;
@@ -125,9 +117,7 @@
           }
 
           @include ul {
-            font-size: 30px;
-            line-height: 32px;
-            etter-spacing: 40 * 30px / 1000;
+            @include font-settings(30px, 32px, 40);
           }
         }
       }
@@ -138,26 +128,18 @@
       
       color: #ffffff;
       font-family: 'HelveticaNeue-Roman';
-      font-size: 28px;
-      line-height: 44px;
-      letter-spacing: 40 * 50px / 1000;
+      @include font-settings(28px, 44px, 40);
 
       @include ul-min {
-        font-size: 19px;
-        line-height: 30px;
-        letter-spacing: 40 * 19px / 1000;
+        @include font-settings(19px, 30px, 40);
       }
 
       @include ul {
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: 40 * 16px / 1000;
+        @include font-settings(16px, 30px, 40);
       }
 
       @include lg-landscape {
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 40 * 14px / 1000;
+        @include font-settings(14px, 20px, 40);
       }
 
       @include md {
@@ -265,37 +247,27 @@
       &-title {
         margin-bottom: 20px;
         font-family: 'HelveticaNeue Bold';
-        font-size: 60px;
-        line-height: 48px;
-        letter-spacing: 40 * 60px / 1000;
+        @include font-settings(60px, 48px, 40);
         text-transform: uppercase;
 
         @include ul-min {
           margin-bottom: 15px;
-          font-size: 40px;
-          line-height: 34px;
-          letter-spacing: 40 * 40px / 1000;
+          @include font-settings(40px, 34px, 40);
         }
 
         @include ul {
           margin-bottom: 10px;
-          font-size: 30px;
-          line-height: 26px;
-          letter-spacing: 40 * 30px / 1000;
+          @include font-settings(30px, 26px, 40);
         }
 
         @include lg-landscape {
           margin-bottom: 0;
-          font-size: 25px;
-          line-height: 26px;
-          letter-spacing: 40 * 25px / 1000;
+          @include font-settings(25px, 26px, 40);
         }
 
         @include sm {
           margin-bottom: 0;
-          font-size: 25px;
-          line-height: 26px;
-          letter-spacing: 40 * 25px / 1000;
+          @include font-settings(25px, 26px, 40);
         }
       }
 
@@ -320,28 +292,20 @@
         
         &-category {
           margin-right: 30px;
-          font-size: 24px;
-          line-height: 44px;
-          letter-spacing: 40 * 24px / 1000;
+          @include font-settings(24px, 44px, 40);
 
           @include ul-min {
-            font-size: 16px;
-            line-height: 32px;
-            letter-spacing: 40 * 16px / 1000;
+            @include font-settings(16px, 32px, 40);
           }
 
           @include ul {
             margin-right: 20px;
-            font-size: 12px;
-            line-height: 24px;
-            letter-spacing: 40 * 12px / 1000;
+            @include font-settings(12px, 24px, 40);
           }
 
           @include sm {
             margin-right: 10px;
-            font-size: 12px;
-            line-height: 14px;
-            letter-spacing: -20 * 12px / 1000;
+            @include font-settings(12px, 14px, -20);
           }
 
           
@@ -402,30 +366,22 @@
 
       &-description {
         margin-bottom: 60px;
-        font-size: 32px;
-        line-height: 48px;
-        letter-spacing: 1 * 32px / 1000;
+        @include font-settings(32px, 48px, 1);
 
         @include ul-min {
           margin-bottom: 40px;
-          font-size: 21px;
-          line-height: 34px;
-          letter-spacing: 1 * 21px / 1000;
+          @include font-settings(21px, 34px, 1);
         }
 
         @include ul {
           margin-bottom: 20px;
-          font-size: 16px;
-          line-height: 26px;
-          letter-spacing: 40 * 16px / 1000;
+          @include font-settings(16px, 26px, 40);
         }
 
         @include lg-landscape {
           margin-bottom: 10px;
           text-align: justify;
-          font-size: 14px;
-          line-height: 20px;
-          letter-spacing: 40 * 12px / 1000;
+          @include font-settings(14px, 20px, 34);
         }
 
         @include md {
@@ -434,9 +390,7 @@
         }
 
         @include sm {
-          font-size: 14px;
-          line-height: 20px;
-          letter-spacing: 40 * 12px / 1000;
+          @include font-settings(14px, 20px, 34);
         }
       }
 
@@ -463,9 +417,7 @@
           display: inline-block;
           margin-right: 40px;
           color: #ffffff;
-          font-size: 28px;
-          line-height: 44px;
-          letter-spacing: 40 * 28px / 1000;
+          @include font-settings(28px, 44px, 40);
 
           @include ul-min {
             margin-right: 30px;
@@ -476,25 +428,19 @@
           @include ul {
             margin-right: 0;
             margin-bottom: 10px;
-            font-size: 16px;
-            line-height: 30px;
-            letter-spacing: 40 * 16px / 1000;
+            @include font-settings(16px, 30px, 40);
           }
 
           @include lg-landscape {
             margin-right: 0;
             justify-content: space-around;
             margin-bottom: 0;
-            font-size: 14px;
-            line-height: 20px;
-            letter-spacing: 40 * 14px / 1000;
+            @include font-settings(14px, 20px, 40);
           }
 
           @include sm {
             margin-bottom: 10px;
-            font-size: 14px;
-            line-height: 20px;
-            letter-spacing: 40 * 14px / 1000;
+            @include font-settings(14px, 20px, 40);
           }
 
           &:nth-last-child(2) {

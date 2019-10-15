@@ -34,20 +34,14 @@
       margin-right: 20px;
       font-family: 'HelveticaNeue-Roman';
       color: $color-gray;
-      font-size: 24px;
-      line-height: 44px;
-      letter-spacing: 40 * 24px / 1000;
+      @include font-settings(24px, 44px, 40);
 
       @include ul-min {
-        font-size: 16px;
-        line-height: 32px;
-        letter-spacing: 40 * 16px / 1000;
+        @include font-settings(16px, 32px, 40);
       }
 
       @include ul {
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 40 * 14px / 1000;
+        @include font-settings(14px, 16px, 40);
       }
 
       @include md {
@@ -125,22 +119,16 @@
     margin-bottom: 50px;
     font-family: 'HelveticaNeue-Roman';
     color: #a7aaab;
-    font-size: 24px;
-    line-height: 44px;
-    letter-spacing: 40 * 28px / 1000;
+    @include font-settings(24px, 44px, 40);
 
     @include ul-min {
       margin-bottom: 40px;
-      font-size: 16px;
-      line-height: 32px;
-      letter-spacing: 40 * 16px / 1000;
+      @include font-settings(16px, 32px, 40);
     }
 
     @include ul {
       margin-bottom: 20px;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 40 * 14px / 1000;
+      @include font-settings(14px, 20px, 40);
     }
 
     &-bold {
