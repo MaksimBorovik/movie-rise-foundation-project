@@ -4,6 +4,30 @@
     padding: 0;
   }
 
+  &__mobile-menu {
+
+    &-hamburger {
+      margin-bottom: 0 !important;
+      font-family: 'HelveticaNeue-Roman';
+      letter-spacing: 50 * 28px / 1000;
+    }
+
+    &-block {
+      background-color: #000000;
+    }
+
+    &-list {
+      &-item {
+        font-family: 'HelveticaNeue Bold';
+
+        &-subitem {
+          font-family: 'HelveticaNeue-Roman';
+        }
+      }
+    }
+
+  }
+
   &__menu {
     margin-bottom: 36px;
 
@@ -961,6 +985,10 @@
 
         @include xl {
           width: 160px;
+        }
+
+        @include sm {
+          width: 120px;
         }
 
         &:hover,

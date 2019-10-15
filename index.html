@@ -27,7 +27,7 @@
           </div>
           <div class="row">
             <div class="header__mobile-menu-sign-up column"><span>Or create your own account&nbsp;</span><a class="header__mobile-menu-sign-up-create" href="#">for free</a></div>
-          </div><i class="header__mobile-menu-close material-icons">close</i>
+          </div><i class="header__mobile-menu-close material-icons" data-close>close</i>
         </div>
       </div>
       <div class="off-canvas-content" data-off-canvas-content>
@@ -80,18 +80,29 @@
       </div>
     </header>
     <section><div class="chart__wrapper small columns">
-<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium" style="display: none;">
+      <div class="chart__mobile-menu"><div class="chart__mobile-menu-hamburger title-bar align-center" data-responsive-toggle="example-menu" data-hide-for="medium" style="display: none;">
 <button class="menu-icon" type="button" data-toggle="example-menu"></button>
 <div class="title-bar-title">Menu</div>
-<div class="columns">
-<ul class="menu align-right">
-<li role="menuitem"><a href="#"><i class="material-icons">view_module</i></a></li>
-<li role="menuitem"><a href="#"><i class="material-icons">view_stream</i></a></li>
+</div>
+        <div class="chart__mobile-menu-block" id="example-menu"><ul class="chart__menu-mobile-list vertical menu accordion-menu show-for-small-only" data-accordion-menu data-multi-open="false"> 
+<li><a class="chart__mobile-menu-list-item" href="#">Trending</a></li>
+<li><a class="chart__mobile-menu-list-item" href="#">Top Rated</a></li>
+<li><a class="chart__mobile-menu-list-item" href="#">New Arrivals</a></li>
+<li><a class="chart__mobile-menu-list-item" href="#">Trailers</a></li>
+<li><a class="chart__mobile-menu-list-item" href="#">Coming Soon</a></li>
+<li>
+<a class="chart__mobile-menu-list-item" href="#"><span>Genre</span></a>
+<ul class="chart__mobile-menu-list-item-submenu menu vertical nested">
+<li><a class="chart__mobile-menu-list-item-subitem" href="#">Adventure</a></li>
+<li><a class="chart__mobile-menu-list-item-subitem" href="#">Drama</a></li>
+<li><a class="chart__mobile-menu-list-item-subitem" href="#">Family</a></li>
+<li><a class="chart__mobile-menu-list-item-subitem" href="#">Fantasy</a></li>
 </ul>
-</div>
-</div>
-<div class="chart__menu align-middle row" id="example-menu">
-<div class="chart__menu-left columns small">
+</li>
+</ul>
+        </div>
+      </div><div class="chart__menu align-middle row">
+<div class="chart__menu-left columns small  hide-for-small-only">
 <ul class="chart__menu-left-list dropdown menu" data-dropdown-menu="mecr65-dropdown-menu" role="menubar">
 <li class="chart__menu-left-list-item" role="menuitem"><a class="chart__menu-left-list-item-link" href="#">Trending</a></li>
 <li class="chart__menu-left-list-item" role="menuitem"><a class="chart__menu-left-list-item-link" href="#">Top Rated</a></li>
@@ -124,9 +135,9 @@
           <div class="chart__list-item-info"><a class="chart__list-item-info-play" href="#"><i class="material-icons">play_circle_filled</i></a>
             <p class="chart__list-item-info-caption">Watch Now</p><a class="chart__list-item-info-more" href="#">View Info</a>
           </div>
-          <div class="chart__list-item-full-info">
+          <div class="chart__list-item-full-info" data-closable>
             <div class="row chart__list-item-full-info__row1">
-              <div class="column small-6 chart__list-item-full-info-clear"><i class="material-icons">clear</i></div>
+              <div class="column small-6 chart__list-item-full-info-clear"><i class="material-icons" data-close>clear</i></div>
               <div class="column small-6 chart__list-item-full-info-buttons"><a class="chart__list-item-full-info-buttons-favorites" href="#">+ Favorites</a><a class="chart__list-item-full-info-buttons-more" href="#"><i class="material-icons">more_vert</i></a></div>
             </div>
             <div class="row chart__list-item-full-info__row2">
@@ -362,6 +373,7 @@
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="libs/foundation/js/vendor/jquery.js"></script>
     <script src="libs/foundation/js/vendor/foundation.min.js"></script>
     <script src="libs/slick/slick.js"></script>
     <script src="assets/js/main.js"></script>

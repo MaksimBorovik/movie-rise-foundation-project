@@ -1,19 +1,32 @@
 section
   
     <div class="chart__wrapper small columns">
-      //- TODO: mobile menu
-      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium" style="display: none;">
-        <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-        <div class="title-bar-title">Menu</div>
-        <div class="columns">
-          <ul class="menu align-right">
-            <li role="menuitem"><a href="#"><i class="material-icons">view_module</i></a></li>
-            <li role="menuitem"><a href="#"><i class="material-icons">view_stream</i></a></li>
-          </ul>
+      .chart__mobile-menu
+        <div class="chart__mobile-menu-hamburger title-bar align-center" data-responsive-toggle="example-menu" data-hide-for="medium" style="display: none;">
+          <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+          <div class="title-bar-title">Menu</div>
         </div>
-      </div>
-      <div class="chart__menu align-middle row" id="example-menu">
-        <div class="chart__menu-left columns small">
+        .chart__mobile-menu-block(id="example-menu")
+          <ul class="chart__menu-mobile-list vertical menu accordion-menu show-for-small-only" data-accordion-menu data-multi-open="false"> 
+            <li><a class="chart__mobile-menu-list-item" href="#">Trending</a></li>
+            <li><a class="chart__mobile-menu-list-item" href="#">Top Rated</a></li>
+            <li><a class="chart__mobile-menu-list-item" href="#">New Arrivals</a></li>
+            <li><a class="chart__mobile-menu-list-item" href="#">Trailers</a></li>
+            <li><a class="chart__mobile-menu-list-item" href="#">Coming Soon</a></li>
+            <li>
+              <a class="chart__mobile-menu-list-item" href="#"><span>Genre</span></a>
+              <ul class="chart__mobile-menu-list-item-submenu menu vertical nested">
+                <li><a class="chart__mobile-menu-list-item-subitem" href="#">Adventure</a></li>
+                <li><a class="chart__mobile-menu-list-item-subitem" href="#">Drama</a></li>
+                <li><a class="chart__mobile-menu-list-item-subitem" href="#">Family</a></li>
+                <li><a class="chart__mobile-menu-list-item-subitem" href="#">Fantasy</a></li>
+              </ul>
+            </li>
+          </ul>
+      <div class="chart__menu align-middle row">
+        
+          
+        <div class="chart__menu-left columns small  hide-for-small-only">
           <ul class="chart__menu-left-list dropdown menu" data-dropdown-menu="mecr65-dropdown-menu" role="menubar">
             <li class="chart__menu-left-list-item" role="menuitem"><a class="chart__menu-left-list-item-link" href="#">Trending</a></li>
             <li class="chart__menu-left-list-item" role="menuitem"><a class="chart__menu-left-list-item-link" href="#">Top Rated</a></li>
@@ -31,6 +44,7 @@ section
             </li>   
           </ul>
         </div>
+
         <div class="chart__menu-right columns shrink hide-for-small-only">
           <ul class="chart__menu-right-list menu">
             <li role="menuitem"><a class="chart__menu-right-list-item" href="#"><i class="material-icons">view_module</i></a></li>

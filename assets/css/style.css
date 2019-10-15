@@ -333,6 +333,24 @@ body {
   padding: 0;
 }
 
+.chart__mobile-menu-hamburger {
+  margin-bottom: 0 !important;
+  font-family: 'HelveticaNeue-Roman';
+  letter-spacing: 1.4px;
+}
+
+.chart__mobile-menu-block {
+  background-color: #000000;
+}
+
+.chart__mobile-menu-list-item {
+  font-family: 'HelveticaNeue Bold';
+}
+
+.chart__mobile-menu-list-item-subitem {
+  font-family: 'HelveticaNeue-Roman';
+}
+
 .chart__menu {
   margin-bottom: 36px;
 }
@@ -697,8 +715,8 @@ body {
   height: 18px;
   border-radius: 50%;
   position: relative;
-  -webkit-animation: loader10-uf1811d43 1s ease alternate infinite;
-          animation: loader10-uf1811d43 1s ease alternate infinite;
+  -webkit-animation: loader10-ufc0f0779 1s ease alternate infinite;
+          animation: loader10-ufc0f0779 1s ease alternate infinite;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
   top: -18px;
@@ -710,8 +728,8 @@ body {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  -webkit-animation: loader10-uf1811d43 1s ease alternate infinite;
-          animation: loader10-uf1811d43 1s ease alternate infinite;
+  -webkit-animation: loader10-ufc0f0779 1s ease alternate infinite;
+          animation: loader10-ufc0f0779 1s ease alternate infinite;
 }
 
 .chart__list-more-loading::before {
@@ -726,7 +744,7 @@ body {
           animation-delay: 0.6s;
 }
 
-@-webkit-keyframes loader10-uf1811d43 {
+@-webkit-keyframes loader10-ufc0f0779 {
   0% {
     -webkit-box-shadow: 0 18px 0 -18px #0aaee4;
             box-shadow: 0 18px 0 -18px #0aaee4;
@@ -737,7 +755,7 @@ body {
   }
 }
 
-@keyframes loader10-uf1811d43 {
+@keyframes loader10-ufc0f0779 {
   0% {
     -webkit-box-shadow: 0 18px 0 -18px #0aaee4;
             box-shadow: 0 18px 0 -18px #0aaee4;
@@ -985,8 +1003,8 @@ body {
     height: 16px;
     border-radius: 50%;
     position: relative;
-    -webkit-animation: loader10-u89dbf6f6 1s ease alternate infinite;
-            animation: loader10-u89dbf6f6 1s ease alternate infinite;
+    -webkit-animation: loader10-ub945f2c3 1s ease alternate infinite;
+            animation: loader10-ub945f2c3 1s ease alternate infinite;
     -webkit-animation-delay: 0.4s;
             animation-delay: 0.4s;
     top: -16px;
@@ -997,8 +1015,8 @@ body {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    -webkit-animation: loader10-u89dbf6f6 1s ease alternate infinite;
-            animation: loader10-u89dbf6f6 1s ease alternate infinite;
+    -webkit-animation: loader10-ub945f2c3 1s ease alternate infinite;
+            animation: loader10-ub945f2c3 1s ease alternate infinite;
   }
   .chart__list-more-loading::before {
     left: -28px;
@@ -1010,7 +1028,7 @@ body {
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
   }
-  @-webkit-keyframes loader10-u89dbf6f6 {
+  @-webkit-keyframes loader10-ub945f2c3 {
     0% {
       -webkit-box-shadow: 0 16px 0 -16px #0aaee4;
               box-shadow: 0 16px 0 -16px #0aaee4;
@@ -1020,7 +1038,7 @@ body {
               box-shadow: 0 16px 0 #0aaee4;
     }
   }
-  @keyframes loader10-u89dbf6f6 {
+  @keyframes loader10-ub945f2c3 {
     0% {
       -webkit-box-shadow: 0 16px 0 -16px #0aaee4;
               box-shadow: 0 16px 0 -16px #0aaee4;
@@ -1250,8 +1268,8 @@ body {
     height: 14px;
     border-radius: 50%;
     position: relative;
-    -webkit-animation: loader10-u36e17bdc 1s ease alternate infinite;
-            animation: loader10-u36e17bdc 1s ease alternate infinite;
+    -webkit-animation: loader10-uf1aaf277 1s ease alternate infinite;
+            animation: loader10-uf1aaf277 1s ease alternate infinite;
     -webkit-animation-delay: 0.4s;
             animation-delay: 0.4s;
     top: -14px;
@@ -1262,8 +1280,8 @@ body {
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    -webkit-animation: loader10-u36e17bdc 1s ease alternate infinite;
-            animation: loader10-u36e17bdc 1s ease alternate infinite;
+    -webkit-animation: loader10-uf1aaf277 1s ease alternate infinite;
+            animation: loader10-uf1aaf277 1s ease alternate infinite;
   }
   .chart__list-more-loading::before {
     left: -26px;
@@ -1275,7 +1293,7 @@ body {
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
   }
-  @-webkit-keyframes loader10-u36e17bdc {
+  @-webkit-keyframes loader10-uf1aaf277 {
     0% {
       -webkit-box-shadow: 0 14px 0 -14px #0aaee4;
               box-shadow: 0 14px 0 -14px #0aaee4;
@@ -1285,7 +1303,7 @@ body {
               box-shadow: 0 14px 0 #0aaee4;
     }
   }
-  @keyframes loader10-u36e17bdc {
+  @keyframes loader10-uf1aaf277 {
     0% {
       -webkit-box-shadow: 0 14px 0 -14px #0aaee4;
               box-shadow: 0 14px 0 -14px #0aaee4;
@@ -1844,5 +1862,8 @@ body {
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.42px;
+  }
+  .chart__list-subscribe-button {
+    width: 120px;
   }
 }
