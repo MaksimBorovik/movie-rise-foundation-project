@@ -18,8 +18,8 @@ mixin sliderItem(data)
           span.header__slider-item-rating-badge= data.rating
         p.header__slider-item-description= data.description
         .header__slider-item-buttons
-          a.header__slider-item-buttons-watch.active(href="#") Watch Now
-          a.header__slider-item-buttons-info(href="#") View Info
+          a.header__slider-item-buttons-watch.header__slider-item-button.active(href="#") Watch Now
+          a.header__slider-item-buttons-info.header__slider-item-button(href="#") View Info
           a.header__slider-item-buttons-favorites(href="#") + Favorites
           a.header__slider-item-buttons-more(href="#")
             i(class="material-icons") more_vert
@@ -31,7 +31,7 @@ mixin movieBlock(data)
         a.chart__list-item-info-play(href="#")
           i(class="material-icons") play_circle_filled
         p.chart__list-item-info-caption Watch Now
-        a.chart__list-item-info-more(href="#") View Info
+        a.chart__list-item-info-more(href="#" data-js="open-full-info") View Info
       .chart__list-item-full-info(data-closable)
         .row.chart__list-item-full-info__row1
           .column.small-6.chart__list-item-full-info-clear

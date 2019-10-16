@@ -129,37 +129,39 @@
     &-right {
       // padding-right: 0;
       
-      li:last-of-type a {
-        padding: 0 0 0 1rem !important;
-      }
-
       &-list-item {
-        padding: 0 1rem 0 1rem !important;
-
-        @include ul-min {
+        &:last-of-type a {
           padding: 0 0 0 1rem !important;
         }
-        
-        i {
-        color: #d6d8d8;
-        font-size: 46px;
 
-        @include ul-min {
-          font-size: 33px;
-        }
+        &-link {
+          padding: 0 1rem 0 1rem !important;
 
-        @include ul {
-          font-size: 27px;
-        }
-
-        @include lg {
-          font-size: 24px;
-        }
-
-        &:hover,
-          &:focus,
-          &:active {
+          &:hover i,
+          &:focus i,
+          &.active i {
             color: $color-primary;
+          }
+  
+          @include ul-min {
+            padding: 0 0 0 1rem !important;
+          }
+          
+          i {
+          color: #d6d8d8;
+          font-size: 46px;
+  
+            @include ul-min {
+              font-size: 33px;
+            }
+  
+            @include ul {
+              font-size: 27px;
+            }
+  
+            @include lg {
+              font-size: 24px;
+            }
           }
         }
       }
@@ -184,7 +186,6 @@
         }
 
         &-section {
-          // display: none; // !!!!
           display: flex;
           align-items: center;
           flex-wrap: wrap;
@@ -436,7 +437,6 @@
       }
 
       &-full-info {
-        // TODO: JavaScript button
         display: none;
         padding: 25px;
         position: absolute;

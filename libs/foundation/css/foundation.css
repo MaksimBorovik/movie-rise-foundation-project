@@ -358,9 +358,9 @@ a {
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
-    /* color: #258faf; */
-    /* color: #0aaee4; */
-    /* color: #ffffff;  */
+    /* color: #258faf; 
+    color: #0aaee4;
+    color: #ffffff;  */
   }
   a img {
     border: 0; }

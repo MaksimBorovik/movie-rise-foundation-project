@@ -396,21 +396,23 @@ body {
   font-weight: bold;
 }
 
-.chart__menu-right li:last-of-type a {
+.chart__menu-right-list-item:last-of-type a {
   padding: 0 0 0 1rem !important;
 }
 
-.chart__menu-right-list-item {
+.chart__menu-right-list-item-link {
   padding: 0 1rem 0 1rem !important;
 }
 
-.chart__menu-right-list-item i {
-  color: #d6d8d8;
-  font-size: 46px;
+.chart__menu-right-list-item-link:hover i,
+.chart__menu-right-list-item-link:focus i,
+.chart__menu-right-list-item-link.active i {
+  color: #0aaee4;
 }
 
-.chart__menu-right-list-item i:hover, .chart__menu-right-list-item i:focus, .chart__menu-right-list-item i:active {
-  color: #0aaee4;
+.chart__menu-right-list-item-link i {
+  color: #d6d8d8;
+  font-size: 46px;
 }
 
 .chart__list-item .card {
@@ -718,8 +720,8 @@ body {
   height: 18px;
   border-radius: 50%;
   position: relative;
-  -webkit-animation: loader10-uf07c12b5 1s ease alternate infinite;
-          animation: loader10-uf07c12b5 1s ease alternate infinite;
+  -webkit-animation: loader10-u67bc5172 1s ease alternate infinite;
+          animation: loader10-u67bc5172 1s ease alternate infinite;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
   top: -18px;
@@ -731,8 +733,8 @@ body {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  -webkit-animation: loader10-uf07c12b5 1s ease alternate infinite;
-          animation: loader10-uf07c12b5 1s ease alternate infinite;
+  -webkit-animation: loader10-u67bc5172 1s ease alternate infinite;
+          animation: loader10-u67bc5172 1s ease alternate infinite;
 }
 
 .chart__list-more-loading::before {
@@ -747,7 +749,7 @@ body {
           animation-delay: 0.6s;
 }
 
-@-webkit-keyframes loader10-uf07c12b5 {
+@-webkit-keyframes loader10-u67bc5172 {
   0% {
     -webkit-box-shadow: 0 18px 0 -18px #0aaee4;
             box-shadow: 0 18px 0 -18px #0aaee4;
@@ -758,7 +760,7 @@ body {
   }
 }
 
-@keyframes loader10-uf07c12b5 {
+@keyframes loader10-u67bc5172 {
   0% {
     -webkit-box-shadow: 0 18px 0 -18px #0aaee4;
             box-shadow: 0 18px 0 -18px #0aaee4;
@@ -921,10 +923,10 @@ body {
     line-height: 40px;
     letter-spacing: 0.76px;
   }
-  .chart__menu-right-list-item {
+  .chart__menu-right-list-item-link {
     padding: 0 0 0 1rem !important;
   }
-  .chart__menu-right-list-item i {
+  .chart__menu-right-list-item-link i {
     font-size: 33px;
   }
   .chart__list-item-title {
@@ -1006,8 +1008,8 @@ body {
     height: 16px;
     border-radius: 50%;
     position: relative;
-    -webkit-animation: loader10-u04ed9f60 1s ease alternate infinite;
-            animation: loader10-u04ed9f60 1s ease alternate infinite;
+    -webkit-animation: loader10-u8e0f05f5 1s ease alternate infinite;
+            animation: loader10-u8e0f05f5 1s ease alternate infinite;
     -webkit-animation-delay: 0.4s;
             animation-delay: 0.4s;
     top: -16px;
@@ -1018,8 +1020,8 @@ body {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    -webkit-animation: loader10-u04ed9f60 1s ease alternate infinite;
-            animation: loader10-u04ed9f60 1s ease alternate infinite;
+    -webkit-animation: loader10-u8e0f05f5 1s ease alternate infinite;
+            animation: loader10-u8e0f05f5 1s ease alternate infinite;
   }
   .chart__list-more-loading::before {
     left: -28px;
@@ -1031,7 +1033,7 @@ body {
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
   }
-  @-webkit-keyframes loader10-u04ed9f60 {
+  @-webkit-keyframes loader10-u8e0f05f5 {
     0% {
       -webkit-box-shadow: 0 16px 0 -16px #0aaee4;
               box-shadow: 0 16px 0 -16px #0aaee4;
@@ -1041,7 +1043,7 @@ body {
               box-shadow: 0 16px 0 #0aaee4;
     }
   }
-  @keyframes loader10-u04ed9f60 {
+  @keyframes loader10-u8e0f05f5 {
     0% {
       -webkit-box-shadow: 0 16px 0 -16px #0aaee4;
               box-shadow: 0 16px 0 -16px #0aaee4;
@@ -1166,7 +1168,7 @@ body {
     line-height: 40px;
     letter-spacing: 0.64px;
   }
-  .chart__menu-right-list-item i {
+  .chart__menu-right-list-item-link i {
     font-size: 27px;
   }
   .chart__list-item .card-section {
@@ -1271,8 +1273,8 @@ body {
     height: 14px;
     border-radius: 50%;
     position: relative;
-    -webkit-animation: loader10-u3934742f 1s ease alternate infinite;
-            animation: loader10-u3934742f 1s ease alternate infinite;
+    -webkit-animation: loader10-u294b957d 1s ease alternate infinite;
+            animation: loader10-u294b957d 1s ease alternate infinite;
     -webkit-animation-delay: 0.4s;
             animation-delay: 0.4s;
     top: -14px;
@@ -1283,8 +1285,8 @@ body {
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    -webkit-animation: loader10-u3934742f 1s ease alternate infinite;
-            animation: loader10-u3934742f 1s ease alternate infinite;
+    -webkit-animation: loader10-u294b957d 1s ease alternate infinite;
+            animation: loader10-u294b957d 1s ease alternate infinite;
   }
   .chart__list-more-loading::before {
     left: -26px;
@@ -1296,7 +1298,7 @@ body {
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
   }
-  @-webkit-keyframes loader10-u3934742f {
+  @-webkit-keyframes loader10-u294b957d {
     0% {
       -webkit-box-shadow: 0 14px 0 -14px #0aaee4;
               box-shadow: 0 14px 0 -14px #0aaee4;
@@ -1306,7 +1308,7 @@ body {
               box-shadow: 0 14px 0 #0aaee4;
     }
   }
-  @keyframes loader10-u3934742f {
+  @keyframes loader10-u294b957d {
     0% {
       -webkit-box-shadow: 0 14px 0 -14px #0aaee4;
               box-shadow: 0 14px 0 -14px #0aaee4;
@@ -1497,7 +1499,7 @@ body {
   .chart__menu-left-list-item:hover, .chart__menu-left-list-item:focus, .chart__menu-left-list-item:active {
     border-bottom: 2px solid #0aaee4;
   }
-  .chart__menu-right-list-item i {
+  .chart__menu-right-list-item-link i {
     font-size: 24px;
   }
   .chart__list-item-title {
