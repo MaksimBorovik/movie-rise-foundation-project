@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('.header__slider-items').slick({
     adaptiveHeigh: true,
-    autoplay: true,
+    // autoplay: true,
     dots: true,
     appendDots: $('.header__slider'),
     arrows: false
@@ -19,7 +19,7 @@ $('.header__slider-item-buttons').click(function() {
 });
 
 $('.chart__menu-right-list').click(function() {
-  $('.chart__menu-right-list-item.chart__menu-right-list-item-link').toggleClass('active');
+  $('.chart__menu-right-list-item .chart__menu-right-list-item-link').toggleClass('active');
 });
 
 $('[data-js="open-full-info"]').on('click', function () {

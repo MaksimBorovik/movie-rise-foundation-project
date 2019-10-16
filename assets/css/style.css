@@ -720,8 +720,8 @@ body {
   height: 18px;
   border-radius: 50%;
   position: relative;
-  -webkit-animation: loader10-u67bc5172 1s ease alternate infinite;
-          animation: loader10-u67bc5172 1s ease alternate infinite;
+  -webkit-animation: loader10-u075a5421 1s ease alternate infinite;
+          animation: loader10-u075a5421 1s ease alternate infinite;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
   top: -18px;
@@ -733,8 +733,8 @@ body {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  -webkit-animation: loader10-u67bc5172 1s ease alternate infinite;
-          animation: loader10-u67bc5172 1s ease alternate infinite;
+  -webkit-animation: loader10-u075a5421 1s ease alternate infinite;
+          animation: loader10-u075a5421 1s ease alternate infinite;
 }
 
 .chart__list-more-loading::before {
@@ -749,7 +749,7 @@ body {
           animation-delay: 0.6s;
 }
 
-@-webkit-keyframes loader10-u67bc5172 {
+@-webkit-keyframes loader10-u075a5421 {
   0% {
     -webkit-box-shadow: 0 18px 0 -18px #0aaee4;
             box-shadow: 0 18px 0 -18px #0aaee4;
@@ -760,7 +760,7 @@ body {
   }
 }
 
-@keyframes loader10-u67bc5172 {
+@keyframes loader10-u075a5421 {
   0% {
     -webkit-box-shadow: 0 18px 0 -18px #0aaee4;
             box-shadow: 0 18px 0 -18px #0aaee4;
@@ -1008,8 +1008,8 @@ body {
     height: 16px;
     border-radius: 50%;
     position: relative;
-    -webkit-animation: loader10-u8e0f05f5 1s ease alternate infinite;
-            animation: loader10-u8e0f05f5 1s ease alternate infinite;
+    -webkit-animation: loader10-ud327fbc8 1s ease alternate infinite;
+            animation: loader10-ud327fbc8 1s ease alternate infinite;
     -webkit-animation-delay: 0.4s;
             animation-delay: 0.4s;
     top: -16px;
@@ -1020,8 +1020,8 @@ body {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    -webkit-animation: loader10-u8e0f05f5 1s ease alternate infinite;
-            animation: loader10-u8e0f05f5 1s ease alternate infinite;
+    -webkit-animation: loader10-ud327fbc8 1s ease alternate infinite;
+            animation: loader10-ud327fbc8 1s ease alternate infinite;
   }
   .chart__list-more-loading::before {
     left: -28px;
@@ -1033,7 +1033,7 @@ body {
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
   }
-  @-webkit-keyframes loader10-u8e0f05f5 {
+  @-webkit-keyframes loader10-ud327fbc8 {
     0% {
       -webkit-box-shadow: 0 16px 0 -16px #0aaee4;
               box-shadow: 0 16px 0 -16px #0aaee4;
@@ -1043,7 +1043,7 @@ body {
               box-shadow: 0 16px 0 #0aaee4;
     }
   }
-  @keyframes loader10-u8e0f05f5 {
+  @keyframes loader10-ud327fbc8 {
     0% {
       -webkit-box-shadow: 0 16px 0 -16px #0aaee4;
               box-shadow: 0 16px 0 -16px #0aaee4;
@@ -1273,8 +1273,8 @@ body {
     height: 14px;
     border-radius: 50%;
     position: relative;
-    -webkit-animation: loader10-u294b957d 1s ease alternate infinite;
-            animation: loader10-u294b957d 1s ease alternate infinite;
+    -webkit-animation: loader10-u981d6aba 1s ease alternate infinite;
+            animation: loader10-u981d6aba 1s ease alternate infinite;
     -webkit-animation-delay: 0.4s;
             animation-delay: 0.4s;
     top: -14px;
@@ -1285,8 +1285,8 @@ body {
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    -webkit-animation: loader10-u294b957d 1s ease alternate infinite;
-            animation: loader10-u294b957d 1s ease alternate infinite;
+    -webkit-animation: loader10-u981d6aba 1s ease alternate infinite;
+            animation: loader10-u981d6aba 1s ease alternate infinite;
   }
   .chart__list-more-loading::before {
     left: -26px;
@@ -1298,7 +1298,7 @@ body {
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
   }
-  @-webkit-keyframes loader10-u294b957d {
+  @-webkit-keyframes loader10-u981d6aba {
     0% {
       -webkit-box-shadow: 0 14px 0 -14px #0aaee4;
               box-shadow: 0 14px 0 -14px #0aaee4;
@@ -1308,7 +1308,7 @@ body {
               box-shadow: 0 14px 0 #0aaee4;
     }
   }
-  @keyframes loader10-u294b957d {
+  @keyframes loader10-u981d6aba {
     0% {
       -webkit-box-shadow: 0 14px 0 -14px #0aaee4;
               box-shadow: 0 14px 0 -14px #0aaee4;
